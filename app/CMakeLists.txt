@@ -12,5 +12,6 @@ set_target_properties(hello_world PROPERTIES
     XCODE_ATTRIBUTE_PRODUCT_BUNDLE_IDENTIFIER "com.zuler.todesk.licode"
     XCODE_ATTRIBUTE_CODE_SIGN_STYLE "Manual"
     XCODE_ATTRIBUTE_SKIP_INSTALL "NO"
+    XCODE_EMBED_FRAMEWORKS "HelloFramework"
 )
 target_link_libraries(hello_world "-framework Cocoa" HelloFramework)
